@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState, type PointerEvent } from "react";
-import { useReducedMotion } from "framer-motion";
 import { RotateCw } from "lucide-react";
 
 interface TurntableProps {
@@ -10,40 +9,19 @@ interface TurntableProps {
 
 export function Turntable({ frames, alt, testId }: TurntableProps) {
   const [frame, setFrame] = useState(0);
-  const [ready, setReady] = useState(false);
   const dragging = useRef(false);
-  const interacted = useRef(false);
   const startX = useRef(0);
   const startFrame = useRef(0);
-  const reduce = useReducedMotion();
 
   useEffect(() => {
-    let loaded = 0;
     frames.forEach((src) => {
       const img = new Image();
       img.src = src;
-      const done = () => {
-        loaded += 1;
-        if (loaded === frames.length) setReady(true);
-      };
-      img.onload = done;
-      img.onerror = done;
     });
   }, [frames]);
 
-  useEffect(() => {
-    if (reduce || !ready) return;
-    const t = window.setInterval(() => {
-      if (!interacted.current && !dragging.current) {
-        setFrame((f) => (f + 1) % frames.length);
-      }
-    }, 320);
-    return () => window.clearInterval(t);
-  }, [ready, reduce, frames.length]);
-
   const handleDown = (e: PointerEvent<HTMLDivElement>) => {
     dragging.current = true;
-    interacted.current = true;
     startX.current = e.clientX;
     startFrame.current = frame;
     e.currentTarget.setPointerCapture(e.pointerId);

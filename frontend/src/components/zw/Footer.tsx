@@ -1,4 +1,4 @@
-import { SiInstagram, SiTiktok, SiX, SiYoutube } from "@icons-pack/react-simple-icons";
+import { SiYoutube } from "@icons-pack/react-simple-icons";
 import { LogoMark } from "./Logo";
 import { scrollToSection } from "@/lib/scroll";
 import { CONTACT_EMAIL } from "@/lib/assets";
@@ -14,9 +14,6 @@ const NAV = [
 
 const SOCIALS = [
   { label: "YouTube", href: "https://www.youtube.com/@ZWxStudio", Icon: SiYoutube, testId: "social-youtube" },
-  { label: "TikTok", href: "https://tiktok.com", Icon: SiTiktok, testId: "social-tiktok" },
-  { label: "Instagram", href: "https://instagram.com", Icon: SiInstagram, testId: "social-instagram" },
-  { label: "X", href: "https://x.com", Icon: SiX, testId: "social-x" },
 ];
 
 export function Footer() {

@@ -58,6 +58,10 @@ Premium single-page landing site for ZWStudio (Zero Wings Studio), an independen
 - Navbar section links fall back to "/#section" navigation when off the home page
 - Routes: `/` Home, `/work/:slug` ProjectDetail
 
+## Implemented (2026-07 / build 6)
+- Removed turntable idle auto-rotate (user request "jangan buat berputar") — Sunburst now static front view, manual drag-to-rotate retained
+- Footer socials reduced to YouTube only → https://www.youtube.com/@ZWxStudio (TikTok/Instagram/X removed per user request)
+
 ## Backlog / next tasks
 - P0: Replace placeholder email hello@zerowings.studio with real address; add real social profile URLs
 - P1: ~~Real YouTube/TikTok embeds or API-driven latest-shorts feed~~ DONE (build 3, YouTube RSS live)
