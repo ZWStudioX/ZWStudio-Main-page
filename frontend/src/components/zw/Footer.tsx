@@ -13,7 +13,7 @@ const NAV = [
 ];
 
 const SOCIALS = [
-  { label: "YouTube", href: "https://youtube.com", Icon: SiYoutube, testId: "social-youtube" },
+  { label: "YouTube", href: "https://www.youtube.com/@ZWxStudio", Icon: SiYoutube, testId: "social-youtube" },
   { label: "TikTok", href: "https://tiktok.com", Icon: SiTiktok, testId: "social-tiktok" },
   { label: "Instagram", href: "https://instagram.com", Icon: SiInstagram, testId: "social-instagram" },
   { label: "X", href: "https://x.com", Icon: SiX, testId: "social-x" },

@@ -40,8 +40,15 @@ Premium single-page landing site for ZWStudio (Zero Wings Studio), an independen
 - Image cards keep dark scrims via fixed ink token; stat tiles flipped to dark ink for contrast
 - Contact email updated to hello@zwstudiox.com (footer, nav, CTA)
 
+## Implemented (2026-07 / build 3)
+- Live Shorts feed: GET /api/shorts resolves @ZWxStudio (channel UCJrV2L7L3AbDFRKxlRj63cg, "ZW Animation") via public YouTube RSS, caches in Mongo `shorts_cache` (1h TTL), falls back to stale cache then placeholders
+- ContentLab section renders real videos (thumbnail, cleaned title, date, youtube.com/shorts/<id> links) with "Live from YouTube" badge; placeholder art only when feed unavailable
+- Footer YouTube link points to https://www.youtube.com/@ZWxStudio
+- Env: YOUTUBE_CHANNEL_HANDLE=@ZWxStudio in backend/.env
+
 ## Backlog / next tasks
 - P0: Replace placeholder email hello@zerowings.studio with real address; add real social profile URLs
+- P1: ~~Real YouTube/TikTok embeds or API-driven latest-shorts feed~~ DONE (build 3, YouTube RSS live)
 - P1: Project detail modals/pages for the 3 featured works
-- P1: Real YouTube/TikTok embeds or API-driven latest-shorts feed
 - P2: OG share image, analytics, blog/devlog section, custom cursor
+- P2: YouTube Data API v3 upgrade (view counts, durations, Shorts-only filtering) if an API key is ever added
