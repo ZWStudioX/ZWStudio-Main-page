@@ -1,14 +1,14 @@
 const IMG = "https://static.prod-images.emergentagent.com/jobs/1c7ae84f-1882-4ed1-b185-1a5ca361d519/images";
 
 export const ASSETS = {
-  heroCharacter: `${IMG}/aaef16612b23cd6c8d6ef349749b91cc50ee4d6ca9e48537b88b8f5199c35837.jpeg`,
-  workGames: `${IMG}/10cf1d2d7db09d572677c2ce2e0534f8a6e0b194be8c2c905bbe33140e8adea7.jpeg`,
-  workAi: `${IMG}/c76a8b5a5062e1eff949d591756e671d542660cfe155180e25515a25e72c88e3.jpeg`,
-  workAnimation: `${IMG}/a5f15a2be70b71a73f01f80a95c49e29d54cff92580429c0e09d34b39358d033.jpeg`,
-  studioVisual: `${IMG}/140f7cc16d73186c8f53a0a437b46912acb4fa3bcf6238347a25a31118e697b6.jpeg`,
-  short1: `${IMG}/8e4be763e8dae3be259626863c61dbde340420267a2093de43beda3c582ad1b7.jpeg`,
-  short2: `${IMG}/6f4ff542f6978a1a71d32c1623f086ddf9850e3b724c43683232d8cac4dfb9cd.jpeg`,
-  short3: `${IMG}/f633ad2802e49bb01ece1f79d5de81070e9ce2ab9d666289ae20f3d03c05902c.jpeg`,
+  heroCharacter: `${IMG}/5503d33bc3ce7563863c0b42f50039cbc4eca414eac013702e92e1f084de9397.jpeg`,
+  workGames: `${IMG}/2a01c967026ce6b6e4791835924b775718843961dbb01571ad4bf47181cb7f34.jpeg`,
+  workAi: `${IMG}/6f248b7900a49fea0063c5eea0a69f65e43cac44ca67ae4cdd465d4903fab923.jpeg`,
+  workAnimation: `${IMG}/419152b7405faafc1aba5445fb01479bc56acd8951d67202e834b30698168fba.jpeg`,
+  studioVisual: `${IMG}/4ce54e92a1688141a46ae4caf9ea7c14ff7eeab640924ebd467afa97d2a3a7e1.jpeg`,
+  short1: `${IMG}/4b0db18f32cc296828ef7b0f3c8a0f730475db4e325ce3ac13ae722d5aac5557.jpeg`,
+  short2: `${IMG}/45c2da590775e59130ed86798aad8c1828c76cac5f09623d54e26a8b8f0f5e33.jpeg`,
+  short3: `${IMG}/12e90d64d5499d2d628907a5fe1edd845d41edaac5b6842e3f441770841fa320.jpeg`,
 };
 
 export const CONTACT_EMAIL = "hello@zwstudiox.com";

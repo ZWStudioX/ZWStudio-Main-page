@@ -144,7 +144,7 @@ export function Hero() {
             <div className="relative overflow-hidden rounded-xl border border-line-bright">
               <img
                 src={ASSETS.heroCharacter}
-                alt="Stylized 3D character in a dark cinematic studio with crimson and blue rim lighting"
+                alt="Sunburst — blocky Roblox-style ZWStudio mascot in a dark cinematic studio with crimson and blue rim lighting"
                 className="aspect-[4/5] w-full object-cover"
                 loading="eager"
               />
@@ -152,7 +152,7 @@ export function Hero() {
               <div className="absolute bottom-4 left-4 right-4 flex items-end justify-between">
                 <div>
                   <p className="font-mono text-[9px] uppercase tracking-[0.24em] text-sky-300">Unit 00 — Mascot</p>
-                  <p className="font-heading text-lg font-bold uppercase tracking-tight text-white">The Wingless One</p>
+                  <p className="font-heading text-lg font-bold uppercase tracking-tight text-white">Sunburst</p>
                 </div>
                 <p className="font-mono text-[9px] uppercase tracking-[0.2em] text-white/60">Render 001</p>
               </div>
