@@ -26,7 +26,8 @@ export function Navbar() {
 
   const go = (target: string) => {
     setOpen(false);
-    scrollToSection(target);
+    if (document.querySelector(target)) scrollToSection(target);
+    else window.location.assign(`/${target}`);
   };
 
   return (

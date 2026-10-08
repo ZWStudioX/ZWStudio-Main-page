@@ -3,7 +3,8 @@ import { motion, useReducedMotion, useScroll, useTransform } from "framer-motion
 import { ArrowDown, ArrowRight } from "lucide-react";
 import { MagneticButton } from "./MagneticButton";
 import { scrollToSection } from "@/lib/scroll";
-import { ASSETS } from "@/lib/assets";
+import { ASSETS, TURNTABLE_FRAMES } from "@/lib/assets";
+import { Turntable } from "./Turntable";
 
 const EASE = [0.16, 1, 0.3, 1] as const;
 
@@ -142,11 +143,10 @@ export function Hero() {
           >
             <div className="absolute -inset-6 rounded-[2rem] bg-crimson/10 blur-3xl" />
             <div className="relative overflow-hidden rounded-xl border border-line-bright">
-              <img
-                src={ASSETS.heroCharacter}
-                alt="Sunburst — blocky Roblox-style ZWStudio mascot in a dark cinematic studio with crimson and blue rim lighting"
-                className="aspect-[4/5] w-full object-cover"
-                loading="eager"
+              <Turntable
+                frames={TURNTABLE_FRAMES}
+                alt="Sunburst — blocky Roblox-style ZWStudio mascot, draggable 360 degree view in a dark cinematic studio"
+                testId="hero-turntable"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-ink/70 via-transparent to-transparent" />
               <div className="absolute bottom-4 left-4 right-4 flex items-end justify-between">

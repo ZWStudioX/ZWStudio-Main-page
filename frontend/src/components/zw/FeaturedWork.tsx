@@ -1,50 +1,7 @@
+import { Link } from "react-router-dom";
 import { ArrowUpRight } from "lucide-react";
 import { Kicker, Reveal } from "./Reveal";
-import { ASSETS } from "@/lib/assets";
-
-interface Project {
-  id: string;
-  n: string;
-  title: string;
-  kind: string;
-  status: string;
-  statusTone: "crimson" | "volt" | "bone";
-  img: string;
-  blurb: string;
-}
-
-const PROJECTS: Project[] = [
-  {
-    id: "realm-of-echoes",
-    n: "Project 01",
-    title: "Realm of Echoes",
-    kind: "Original Roblox Experience",
-    status: "In Development",
-    statusTone: "crimson",
-    img: ASSETS.workGames,
-    blurb: "A floating-island adventure built around exploration, secrets, and a world that reacts to its players.",
-  },
-  {
-    id: "latent-flesh-chrome",
-    n: "Project 02",
-    title: "Latent Flesh & Chrome",
-    kind: "AI Visual Concept & Lore Bible",
-    status: "Experimental",
-    statusTone: "volt",
-    img: ASSETS.workAi,
-    blurb: "A generative visual lab — character lineages, key art, and a world bible grown from latent space.",
-  },
-  {
-    id: "zero-and-the-glitch",
-    n: "Project 03",
-    title: "Zero & The Glitch",
-    kind: "Comedic 3D Micro-Shorts Series",
-    status: "Ongoing",
-    statusTone: "bone",
-    img: ASSETS.workAnimation,
-    blurb: "A wingless hero versus a broken universe. Weekly chaos in under sixty seconds.",
-  },
-];
+import { PROJECTS, type Project } from "@/lib/projects";
 
 const TONE: Record<Project["statusTone"], string> = {
   crimson: "border-[#FF5A64]/60 text-[#FF5A64]",
@@ -54,9 +11,10 @@ const TONE: Record<Project["statusTone"], string> = {
 
 function WorkCard({ p, large }: { p: Project; large?: boolean }) {
   return (
-    <article
-      className={`group relative overflow-hidden rounded-xl border border-line bg-panel ${large ? "aspect-[16/10] lg:aspect-[21/9]" : "aspect-[16/11]"}`}
-      data-testid={`work-${p.id}`}
+    <Link
+      to={`/work/${p.slug}`}
+      className={`group relative block overflow-hidden rounded-xl border border-line bg-panel transition-colors duration-500 hover:border-line-bright ${large ? "aspect-[16/10] lg:aspect-[21/9]" : "aspect-[16/11]"}`}
+      data-testid={`work-${p.slug}`}
     >
       <img
         src={p.img}
@@ -85,7 +43,7 @@ function WorkCard({ p, large }: { p: Project; large?: boolean }) {
           <ArrowUpRight size={18} />
         </span>
       </div>
-    </article>
+    </Link>
   );
 }
 

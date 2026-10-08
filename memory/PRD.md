@@ -51,6 +51,13 @@ Premium single-page landing site for ZWStudio (Zero Wings Studio), an independen
 - Regenerated: hero centerpiece (Sunburst in dark studio), games world (floating soccer stadium), AI lab (both AI avatars), animation comedy frame, studio visual, 3 fallback short thumbnails — all via image edit mode with the uploaded refs
 - Hero mascot renamed "The Wingless One" → "Sunburst"
 
+## Implemented (2026-07 / build 5)
+- 360° drag-to-rotate Sunburst turntable in hero: 8 AI-generated angle frames (TURNTABLE_FRAMES in assets.ts), `components/zw/Turntable.tsx` — pointer-drag frame stepping, idle auto-rotate until first interaction, preloading, reduced-motion safe, touch-pan-y so mobile scroll still works
+- Project detail pages at /work/:slug (`pages/ProjectDetail.tsx`): story, "Inside the Build" feature list, "Meet the Cast" character gallery (uses PORTRAITS.gpt/gemini + Roblox frames), status pills, contact CTA, next-project pager, 404 state
+- Project data centralized in `src/lib/projects.ts` (PROJECTS), shared by FeaturedWork cards (now React Router Links) and detail pages
+- Navbar section links fall back to "/#section" navigation when off the home page
+- Routes: `/` Home, `/work/:slug` ProjectDetail
+
 ## Backlog / next tasks
 - P0: Replace placeholder email hello@zerowings.studio with real address; add real social profile URLs
 - P1: ~~Real YouTube/TikTok embeds or API-driven latest-shorts feed~~ DONE (build 3, YouTube RSS live)
