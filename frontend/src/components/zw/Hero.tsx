@@ -56,14 +56,14 @@ export function Hero() {
         className="pointer-events-none absolute inset-0"
         style={{
           background:
-            "radial-gradient(ellipse 60% 50% at 68% 45%, rgba(229,9,20,0.14) 0%, transparent 65%), radial-gradient(ellipse 45% 40% at 20% 80%, rgba(0,112,243,0.09) 0%, transparent 70%)",
+            "radial-gradient(ellipse 60% 50% at 68% 45%, rgba(229,9,20,0.10) 0%, transparent 65%), radial-gradient(ellipse 45% 40% at 20% 80%, rgba(0,112,243,0.07) 0%, transparent 70%)",
         }}
       />
       <div
-        className="pointer-events-none absolute inset-0 opacity-[0.35]"
+        className="pointer-events-none absolute inset-0 opacity-[0.5]"
         style={{
           backgroundImage:
-            "linear-gradient(rgba(237,237,242,0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(237,237,242,0.025) 1px, transparent 1px)",
+            "linear-gradient(rgba(16,16,20,0.045) 1px, transparent 1px), linear-gradient(90deg, rgba(16,16,20,0.045) 1px, transparent 1px)",
           backgroundSize: "72px 72px",
         }}
       />
@@ -148,10 +148,10 @@ export function Hero() {
                 className="aspect-[4/5] w-full object-cover"
                 loading="eager"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-obsidian/70 via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-ink/70 via-transparent to-transparent" />
               <div className="absolute bottom-4 left-4 right-4 flex items-end justify-between">
                 <div>
-                  <p className="font-mono text-[9px] uppercase tracking-[0.24em] text-volt">Unit 00 — Mascot</p>
+                  <p className="font-mono text-[9px] uppercase tracking-[0.24em] text-sky-300">Unit 00 — Mascot</p>
                   <p className="font-heading text-lg font-bold uppercase tracking-tight text-white">The Wingless One</p>
                 </div>
                 <p className="font-mono text-[9px] uppercase tracking-[0.2em] text-white/60">Render 001</p>

@@ -43,9 +43,9 @@ export function ContentLab() {
                   loading="lazy"
                   className="absolute inset-0 h-full w-full object-cover opacity-80 transition-all duration-700 ease-out group-hover:scale-[1.05] group-hover:opacity-100"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-obsidian/95 via-obsidian/20 to-obsidian/30" />
+                <div className="absolute inset-0 bg-gradient-to-t from-ink/95 via-ink/20 to-ink/30" />
                 <div className="absolute left-4 top-4 flex items-center gap-2">
-                  <span className="rounded-full border border-white/15 bg-obsidian/60 px-3 py-1 font-mono text-[9px] uppercase tracking-[0.18em] text-white/85 backdrop-blur-sm">
+                  <span className="rounded-full border border-white/15 bg-ink/60 px-3 py-1 font-mono text-[9px] uppercase tracking-[0.18em] text-white/85 backdrop-blur-sm">
                     {s.platform}
                   </span>
                   <span className="rounded-full bg-crimson/90 px-3 py-1 font-mono text-[9px] uppercase tracking-[0.18em] text-white">
@@ -53,7 +53,7 @@ export function ContentLab() {
                   </span>
                 </div>
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <span className="flex h-16 w-16 items-center justify-center rounded-full border border-white/25 bg-obsidian/40 text-white opacity-0 backdrop-blur-md transition-all duration-500 group-hover:scale-100 group-hover:opacity-100 scale-75 group-hover:shadow-[0_0_40px_rgba(229,9,20,0.5)]">
+                  <span className="flex h-16 w-16 items-center justify-center rounded-full border border-white/25 bg-ink/40 text-white opacity-0 backdrop-blur-md transition-all duration-500 group-hover:scale-100 group-hover:opacity-100 scale-75 group-hover:shadow-[0_0_40px_rgba(229,9,20,0.5)]">
                     <Play size={22} fill="currentColor" />
                   </span>
                 </div>

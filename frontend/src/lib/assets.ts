@@ -11,4 +11,4 @@ export const ASSETS = {
   short3: `${IMG}/f633ad2802e49bb01ece1f79d5de81070e9ce2ab9d666289ae20f3d03c05902c.jpeg`,
 };
 
-export const CONTACT_EMAIL = "hello@zerowings.studio";
+export const CONTACT_EMAIL = "hello@zwstudiox.com";

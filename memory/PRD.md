@@ -7,9 +7,9 @@ Premium single-page landing site for ZWStudio (Zero Wings Studio), an independen
 - Frontend: Vite + React 19 + TS, single page at `/` (`src/pages/Home.tsx`), components in `src/components/zw/`
 - Smooth scroll: Lenis (`src/lib/scroll.ts`), disabled under prefers-reduced-motion
 - Motion: Framer Motion (masked line reveals, scroll parallax, magnetic buttons, staggered in-view reveals)
-- Theme: Tailwind v4 tokens in `src/index.css` — obsidian #08080C, crimson #E50914, volt #38BDF8; fonts Space Grotesk (heading), Geist (body), JetBrains Mono (labels)
+- Theme: Tailwind v4 tokens in `src/index.css` — LIGHT editorial "warm paper" theme (paper #F7F6F1, ink #101014, crimson #E50914, deep blue #0070F3); dark imagery preserved inside cards via fixed `--color-ink: #08080C` scrims; fonts Space Grotesk (heading), Geist (body), JetBrains Mono (labels)
 - Assets: AI-generated imagery hosted on Emergent CDN, URLs centralized in `src/lib/assets.ts`
-- Backend: template FastAPI status endpoints only (no app data); contact is mailto:hello@zerowings.studio (placeholder — user to confirm address)
+- Backend: template FastAPI status endpoints only (no app data); contact is mailto:hello@zwstudiox.com
 - Favicon/logo: original SVG mark (crimson 0 + concentric rings + wing facets) at `public/favicon.svg` and `components/zw/Logo.tsx`
 
 ## User personas
@@ -34,6 +34,11 @@ Premium single-page landing site for ZWStudio (Zero Wings Studio), an independen
 - Editorial marquee, scroll-reveal sections, magnetic CTAs, hover image transforms
 - SEO meta in index.html, semantic HTML, data-testids on interactive elements
 - `yarn typecheck` passes; `/api/` responds via public URL
+
+## Implemented (2026-07 / build 2)
+- Switched entire site from dark to warm-paper LIGHT theme (user request, anti-"AI slop" editorial direction)
+- Image cards keep dark scrims via fixed ink token; stat tiles flipped to dark ink for contrast
+- Contact email updated to hello@zwstudiox.com (footer, nav, CTA)
 
 ## Backlog / next tasks
 - P0: Replace placeholder email hello@zerowings.studio with real address; add real social profile URLs

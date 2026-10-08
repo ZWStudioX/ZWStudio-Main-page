@@ -34,9 +34,9 @@ export function Studio() {
             <Reveal delay={0.3}>
               <div className="mt-12 grid grid-cols-2 gap-px overflow-hidden rounded-xl border border-line bg-line sm:grid-cols-4">
                 {STATS.map((s) => (
-                  <div key={s.label} className="bg-obsidian p-5" data-testid={`stat-${s.label.toLowerCase().replace(/\s/g, "-")}`}>
+                  <div key={s.label} className="bg-ink p-5" data-testid={`stat-${s.label.toLowerCase().replace(/\s/g, "-")}`}>
                     <p className="font-heading text-2xl font-bold tracking-tight text-white lg:text-3xl">{s.value}</p>
-                    <p className="mt-2 font-mono text-[9px] uppercase tracking-[0.18em] text-fog">{s.label}</p>
+                    <p className="mt-2 font-mono text-[9px] uppercase tracking-[0.18em] text-white/50">{s.label}</p>
                   </div>
                 ))}
               </div>
@@ -51,7 +51,7 @@ export function Studio() {
                 loading="lazy"
                 className="aspect-[4/3] w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-obsidian/70 via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-ink/70 via-transparent to-transparent" />
               <div className="absolute bottom-5 left-5 flex items-center gap-3">
                 <span className="animate-pulse-dot h-2 w-2 rounded-full bg-crimson" />
                 <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-white/80">The lab — where worlds get built</p>

@@ -11,7 +11,7 @@ export function CTA() {
         className="pointer-events-none absolute inset-0"
         style={{
           background:
-            "radial-gradient(ellipse 55% 60% at 50% 100%, rgba(229,9,20,0.16) 0%, transparent 70%), radial-gradient(ellipse 40% 40% at 85% 10%, rgba(0,112,243,0.08) 0%, transparent 70%)",
+            "radial-gradient(ellipse 55% 60% at 50% 100%, rgba(229,9,20,0.10) 0%, transparent 70%), radial-gradient(ellipse 40% 40% at 85% 10%, rgba(0,112,243,0.05) 0%, transparent 70%)",
         }}
       />
       <div className="relative z-10 mx-auto max-w-[1440px] px-6 lg:px-12">

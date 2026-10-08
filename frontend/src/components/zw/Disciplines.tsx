@@ -35,7 +35,7 @@ const DISCIPLINES: Discipline[] = [
     img: ASSETS.workAi,
     icon: Sparkles,
     tags: ["Concept Art", "Characters", "Video Gen"],
-    accent: "text-volt",
+    accent: "text-sky-300",
   },
   {
     id: "animation",
@@ -63,10 +63,10 @@ function DisciplineCard({ d, tall }: { d: Discipline; tall?: boolean }) {
         loading="lazy"
         className="absolute inset-0 h-full w-full object-cover opacity-70 transition-all duration-700 ease-out group-hover:scale-[1.05] group-hover:opacity-90"
       />
-      <div className="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/55 to-obsidian/10 transition-opacity duration-500" />
+      <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/55 to-ink/10 transition-opacity duration-500" />
       <div className="relative flex h-full flex-col justify-between p-7 lg:p-9">
         <div className="flex items-start justify-between">
-          <span className="flex h-11 w-11 items-center justify-center rounded-lg border border-white/10 bg-obsidian/60 text-bone backdrop-blur-sm">
+          <span className="flex h-11 w-11 items-center justify-center rounded-lg border border-white/10 bg-ink/60 text-bone backdrop-blur-sm">
             <Icon size={19} />
           </span>
           <span className="font-mono text-[10px] uppercase tracking-[0.24em] text-white/60">{d.index}</span>
@@ -74,7 +74,7 @@ function DisciplineCard({ d, tall }: { d: Discipline; tall?: boolean }) {
         <div>
           <div className="mb-3 flex flex-wrap gap-2">
             {d.tags.map((t) => (
-              <span key={t} className="rounded-full border border-white/15 bg-obsidian/50 px-3 py-1 font-mono text-[9px] uppercase tracking-[0.18em] text-white/80 backdrop-blur-sm">
+              <span key={t} className="rounded-full border border-white/15 bg-ink/50 px-3 py-1 font-mono text-[9px] uppercase tracking-[0.18em] text-white/80 backdrop-blur-sm">
                 {t}
               </span>
             ))}
