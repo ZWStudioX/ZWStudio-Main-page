@@ -1,0 +1,42 @@
+# ZWStudio — PRD
+
+## Original problem statement
+Premium single-page landing site for ZWStudio (Zero Wings Studio), an independent creative studio across three disciplines: indie Roblox game development, AIGC (AI-generated content), and 3D animation shorts. Dark cinematic aesthetic, crimson red + electric blue accents (from the uploaded logo), award-worthy motion design, React + Vite + TypeScript + Tailwind + Framer Motion + Lenis. Sections: Hero ("WE BUILD WORLDS."), Manifesto, What We Do (3 disciplines), Featured Work, The Studio, Creative Process, Social/Content, CTA ("LET'S BUILD SOMETHING WEIRD."), Footer.
+
+## Architecture
+- Frontend: Vite + React 19 + TS, single page at `/` (`src/pages/Home.tsx`), components in `src/components/zw/`
+- Smooth scroll: Lenis (`src/lib/scroll.ts`), disabled under prefers-reduced-motion
+- Motion: Framer Motion (masked line reveals, scroll parallax, magnetic buttons, staggered in-view reveals)
+- Theme: Tailwind v4 tokens in `src/index.css` — obsidian #08080C, crimson #E50914, volt #38BDF8; fonts Space Grotesk (heading), Geist (body), JetBrains Mono (labels)
+- Assets: AI-generated imagery hosted on Emergent CDN, URLs centralized in `src/lib/assets.ts`
+- Backend: template FastAPI status endpoints only (no app data); contact is mailto:hello@zerowings.studio (placeholder — user to confirm address)
+- Favicon/logo: original SVG mark (crimson 0 + concentric rings + wing facets) at `public/favicon.svg` and `components/zw/Logo.tsx`
+
+## User personas
+- Players/fans discovering the studio's games and shorts
+- Potential collaborators/partners evaluating the studio's craft
+- Social viewers arriving from YouTube/TikTok/Instagram
+
+## Core requirements (static)
+1. Cinematic dark hero with 3D character centerpiece + floating collage fragments
+2. Typography-driven manifesto
+3. Three discipline cards (Games / AI Creative / Animation)
+4. Featured work showcase (3 projects with statuses)
+5. Studio intro + stats
+6. 4-step process timeline
+7. Short-form content grid (YouTube/TikTok/Instagram placeholders)
+8. Closing CTA with mailto
+9. Footer with nav + socials + © 2026
+
+## Implemented (2026-07 / build 1)
+- All 9 sections built and verified via screenshots (desktop 1440px + mobile 390px)
+- Masked line-by-line hero reveal, scroll parallax on character, floating animated fragments
+- Editorial marquee, scroll-reveal sections, magnetic CTAs, hover image transforms
+- SEO meta in index.html, semantic HTML, data-testids on interactive elements
+- `yarn typecheck` passes; `/api/` responds via public URL
+
+## Backlog / next tasks
+- P0: Replace placeholder email hello@zerowings.studio with real address; add real social profile URLs
+- P1: Project detail modals/pages for the 3 featured works
+- P1: Real YouTube/TikTok embeds or API-driven latest-shorts feed
+- P2: OG share image, analytics, blog/devlog section, custom cursor

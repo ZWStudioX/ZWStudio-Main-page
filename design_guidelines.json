@@ -1,0 +1,211 @@
+{
+  "theme": "dark",
+  "archetype": "THE PERFORMANCE PRO / CYBER-EDITORIAL FUSION",
+  "brand": {
+    "name": "ZWStudio",
+    "fullName": "Zero Wings Studio",
+    "tagline": "A modern indie creative studio where games, AI, and animation collide.",
+    "subheadline": "We build worlds, games, and stories.",
+    "logo_spec": "Concentric crimson-red geometric rings enclosing a stylized numeral '0' flanked by dark obsidian/navy geometric wing facets. Wordmark: 'ZERO WINGS.STUDIO' in tracked uppercase mono/grotesk."
+  },
+  "colors": {
+    "primary_accent": "#E50914",
+    "primary_accent_hover": "#FF2A37",
+    "secondary_accent": "#0070F3",
+    "secondary_accent_glow": "rgba(0, 112, 243, 0.35)",
+    "surfaces": [
+      {
+        "name": "page",
+        "kind": "solid",
+        "bg": "#08080C",
+        "on_bg": "#EDEDF2",
+        "on_bg_muted": "#8E8EA0",
+        "border": "#1E1E28",
+        "roles": {
+          "link": "#EDEDF2",
+          "link_hover": "#FF2A37",
+          "brand_accent": "#E50914",
+          "secondary_accent": "#38BDF8",
+          "code_badge": "#38BDF8"
+        }
+      },
+      {
+        "name": "panel",
+        "kind": "solid",
+        "bg": "#0F0F17",
+        "on_bg": "#F5F5F8",
+        "on_bg_muted": "#9A9AA8",
+        "border": "#232332",
+        "roles": {
+          "tag": "#EDEDF2",
+          "stat_value": "#FFFFFF",
+          "badge_bg": "#1A1A26"
+        }
+      },
+      {
+        "name": "card_elevated",
+        "kind": "solid",
+        "bg": "#14141F",
+        "on_bg": "#FFFFFF",
+        "on_bg_muted": "#A1A1B2",
+        "border": "#2D2D3E"
+      },
+      {
+        "name": "glass_header",
+        "kind": "glass",
+        "contrast_against": "#08080C",
+        "guarantee": "backdrop-blur-xl bg-[#08080C]/80 border-b border-[#222230]",
+        "on_bg": "#F5F5F8",
+        "on_bg_muted": "#8E8EA0"
+      },
+      {
+        "name": "hero",
+        "kind": "image",
+        "contrast_against": "#0A0A0F",
+        "guarantee": "scrim: linear-gradient(180deg, rgba(8,8,12,0.7) 0%, rgba(8,8,12,0.4) 50%, #08080C 100%), radial-gradient(circle at 50% 50%, rgba(229,9,20,0.12) 0%, transparent 70%)",
+        "on_bg": "#FFFFFF",
+        "on_bg_muted": "#A5A5B8",
+        "roles": {
+          "badge_text": "#FF5252",
+          "cta_text": "#FFFFFF"
+        }
+      },
+      {
+        "name": "callout_crimson",
+        "kind": "solid",
+        "bg": "#1F080A",
+        "on_bg": "#FFF0F1",
+        "on_bg_muted": "#FFA8AD",
+        "border": "#4A1116"
+      }
+    ],
+    "accent": "#E50914",
+    "on_accent": "#FFFFFF"
+  },
+  "typography": {
+    "font_family_heading": "Space Grotesk Variable, sans-serif",
+    "font_family_body": "Geist, Inter, sans-serif",
+    "font_family_mono": "JetBrains Mono Variable, monospace",
+    "scale_px": {
+      "display": 60,
+      "h1": 48,
+      "h2": 36,
+      "h3": 24,
+      "body": 16,
+      "caption": 14
+    },
+    "rules": [
+      "H1 Ceiling: text-4xl sm:text-5xl lg:text-6xl with tracking-tighter leading-none font-bold",
+      "Overlines/Kickers: font-mono text-xs uppercase tracking-[0.25em] text-[#E50914]",
+      "Manifesto/Editorial: text-2xl sm:text-3xl lg:text-4xl font-light text-[#EDEDF2] leading-snug",
+      "Body: text-base leading-relaxed text-[#8E8EA0] max-w-2xl",
+      "No center-aligning large paragraphs; use asymmetric left/split balance"
+    ]
+  },
+  "entry_surfaces": {
+    "/": "cinematic dark hero — kinetic masked headline + live 3D character centerpiece with floating game/AI/render collage fragments, primary CTA cluster left, telemetry status pill top right"
+  },
+  "layout_and_sections": [
+    {
+      "id": "hero",
+      "title": "HERO (01 / ENCOUNTER)",
+      "structure": "Split cinematic container with glowing crimson focal center. Left/top: Masked staggered reveal headline 'WE BUILD WORLDS.', subtitle 'Games. AI. Animation.', dual action buttons ('Explore Our Work' [crimson pill with magnetic glide], 'What We Do' [glass outline]). Center/Right: 3D character centerpiece layered with floating glassmorphic fragments representing Roblox game meshes, neural latent space nodes, and 3D wireframe render previews. Micro-telemetry badge: 'STATUS: ACTIVE IN EXPERIMENTAL PRODUCTION'.",
+      "testid": "hero-section"
+    },
+    {
+      "id": "manifesto",
+      "title": "INTRO / MANIFESTO (02 / CREED)",
+      "structure": "Typography-first high-contrast editorial block. Large statement with interactive glowing keyword triggers: 'Games are worlds. Animation is storytelling. AI is a new creative instrument.' Supported by 3-column micro-pillars: 01 Immersion / 02 Velocity / 03 Expressive Craft.",
+      "testid": "manifesto-section"
+    },
+    {
+      "id": "what-we-do",
+      "title": "WHAT WE DO (03 / THREE DISCIPLINES)",
+      "structure": "Tetris Bento grid highlighting three core creative branches with custom tags and interactive drill-downs:\n1. Indie Game Studio: Original Roblox experiences, physics mechanics, live-ops game loops ('Explore Games').\n2. AIGC Studio: Concept development, neural character pipelines, generative lore & visual key art ('Explore AI Work').\n3. 3D Animation & Shorts: Comedic shorts, high-cadence YouTube/TikTok viral storytelling ('Watch Animation').",
+      "testid": "disciplines-section"
+    },
+    {
+      "id": "featured-work",
+      "title": "FEATURED WORK (04 / ARCHIVE)",
+      "structure": "Editorial horizontal-feel or asymmetrical card gallery with tags, progress meters, and preview modal hooks:\n- Project 01: 'Project Zero: Realm of Echoes' (Original Roblox Experience — In Development)\n- Project 02: 'Latent Flesh & Chrome' (AI Visual Concept & Lore Bible — Experimental)\n- Project 03: 'Zero & The Glitch' (Comedic 3D Micro-Shorts Series — Ongoing)",
+      "testid": "featured-work-section"
+    },
+    {
+      "id": "the-studio",
+      "title": "THE STUDIO (05 / COLLECTIVE)",
+      "structure": "Asymmetrical layout: 'Small team. Big worlds.' Highlighting indie ethos, multidisciplinary pipelines, fast iteration, and zero corporate bureaucracy. Includes stats strip: 100% Original IP, 3 Connected Disciplines, 60fps Pipeline, 0 Corporate Bloat.",
+      "testid": "studio-section"
+    },
+    {
+      "id": "process",
+      "title": "CREATIVE PROCESS (06 / PIPELINE)",
+      "structure": "Linear 4-step horizontal cyber-timeline with active step highlight:\n01 IDEA (Concept & Latent Ideation) → 02 BUILD (Roblox & 3D Prototyping) → 03 CREATE (Animation & Polish) → 04 RELEASE (Multi-Platform Launch).",
+      "testid": "process-section"
+    },
+    {
+      "id": "social-content",
+      "title": "CONTENT LAB / SHORTS (07 / BROADCAST)",
+      "structure": "Grid of short-form video cards (9:16 vertical ratio) for YouTube Shorts, TikTok, and Instagram Reels with play button hover glow, comedic titles, duration pills, and view indicators.",
+      "testid": "social-content-section"
+    },
+    {
+      "id": "cta",
+      "title": "FINAL CTA (08 / CONVERGE)",
+      "structure": "Cinematic full-width punch section. Headline: 'LET\\'S BUILD SOMETHING WEIRD.' Dual CTAs: 'Start a Conversation' (mailto:hello@zerowings.studio) and 'See Our Work' (smooth anchor to #featured-work).",
+      "testid": "cta-section"
+    },
+    {
+      "id": "footer",
+      "title": "FOOTER (09 / SYSTEM)",
+      "structure": "Rich dark footer with massive outline watermark 'ZERO WINGS', logo badge, discipline index, direct social links (YouTube, TikTok, Instagram, X/Twitter, Discord, Roblox Group), copy notice: '© 2026 ZWStudio. All worlds reserved.'",
+      "testid": "footer-section"
+    }
+  ],
+  "motion_and_ux": {
+    "smooth_scroll": "Lenis smooth momentum scrolling enabled",
+    "framer_motion": {
+      "headline_reveal": "Masked translateY reveal with cubic-bezier(0.16, 1, 0.3, 1) and staggered children (0.08s)",
+      "card_hover": "Subtle 3D tilt + border highlight shift + image scale 1.04",
+      "marquee": "Slow 30s infinite drift for editorial disciplines ribbon",
+      "magnetic_buttons": "Elastic spring physics on primary CTA hover"
+    },
+    "accessibility": "Prefers-reduced-motion media query respected via motion variants switching to instant opacity fades"
+  },
+  "media_assets": {
+    "hero_centerpiece": {
+      "url": "https://images.unsplash.com/photo-1780702335071-06e6e65ba5f8?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2ODl8MHwxfHNlYXJjaHwyfHwzZCUyMGNoYXJhY3RlciUyMHJlbmRlciUyMGN5YmVycHVuayUyMHN0dWRpb3xlbnwwfHx8fDE3OTE0ODkzMzZ8MA&ixlib=rb-4.1.0&q=85",
+      "alt": "Stylized 3D character in dramatic red-blue studio lighting",
+      "placement": "Hero interactive centerpiece & AIGC showcase"
+    },
+    "game_world_roblox": {
+      "url": "https://images.unsplash.com/photo-1672872476232-da16b45c9001?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzR8MHwxfHNlYXJjaHwxfHxnYW1lJTIwZW52aXJvbm1lbnQlMjBmYW50YXN5JTIwbmVvbnxlbnwwfHx8fDE3OTE0ODkzMzV8MA&ixlib=rb-4.1.0&q=85",
+      "alt": "Futuristic neon city game world environment",
+      "placement": "Featured Project 01 & Games Discipline Card"
+    },
+    "animation_abstract_render": {
+      "url": "https://images.unsplash.com/photo-1622737133809-d95047b9e673?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzF8MHwxfHNlYXJjaHwxfHwzZCUyMGFuaW1hdGlvbiUyMGFic3RyYWN0JTIwcmVuZGVyfGVufDB8fHx8MTc5MTQ4OTMzNXww&ixlib=rb-4.1.0&q=85",
+      "alt": "Abstract 3D floating kinetic cubes and glowing spheres",
+      "placement": "Animation Discipline Showcase & Process section"
+    },
+    "ai_concept_render": {
+      "url": "https://images.unsplash.com/photo-1643139863038-7355941e9e89?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzF8MHwxfHNlYXJjaHw0fHwzZCUyMGFuaW1hdGlvbiUyMGFic3RyYWN0JTIwcmVuZGVyfGVufDB8fHx8MTc5MTQ4OTMzNXww&ixlib=rb-4.1.0&q=85",
+      "alt": "Latent space fluid chrome rings and neon visual vortex",
+      "placement": "AIGC Experimental Showcase & Collage fragment"
+    },
+    "neon_sunset_realm": {
+      "url": "https://images.unsplash.com/photo-1694532573669-f611b17fe414?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzR8MHwxfHNlYXJjaHwyfHxnYW1lJTIwZW52aXJvbm1lbnQlMjBmYW50YXN5JTIwbmVvbnxlbnwwfHx8fDE3OTE0ODkzMzV8MA&ixlib=rb-4.1.0&q=85",
+      "alt": "Neon crimson synthwave sun horizon",
+      "placement": "Final CTA background & Studio backdrop"
+    }
+  },
+  "instructions_to_main_agent": [
+    "Install lenis via `yarn add lenis` in `frontend/` for fluid award-winning momentum scrolling.",
+    "Import Space Grotesk Variable and JetBrains Mono Variable from `@fontsource-variable/space-grotesk` and `@fontsource-variable/jetbrains-mono` in `frontend/src/index.css`.",
+    "Use crimson red (#E50914) as the intentional brand anchor with electric blue (#0070F3 / #38BDF8) as high-tech secondary accents.",
+    "Implement the custom ZWStudio logo component (concentric crimson rings, dark navy wings, '0' mark).",
+    "Implement interactive modals/details for all 3 featured projects and an interactive video preview popup for the short-form content lab.",
+    "Ensure all buttons, navigation links, filters, and cards have explicit `data-testid` attributes.",
+    "Ensure dark mode is locked on `<html class='dark'>` in `frontend/index.html` for cinematic presentation.",
+    "Include subtle particle or ambient glowing mesh canvas background in the hero section."
+  ]
+}
